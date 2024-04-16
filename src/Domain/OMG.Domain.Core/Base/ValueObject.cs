@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace OMG.Domain.Core.Base;
+﻿namespace OMG.Domain.Core.Base;
 public abstract class ValueObject
 {
     protected static bool EqualOperator(ValueObject left, ValueObject right)
