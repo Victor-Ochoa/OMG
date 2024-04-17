@@ -1,4 +1,5 @@
 ﻿using OMG.Domain.Base;
+using OMG.Domain.ValueObjects;
 
 namespace OMG.Domain.Entities.Pedido
 {
@@ -6,6 +7,6 @@ namespace OMG.Domain.Entities.Pedido
     {
         public required string Nome { get; set; }
         public required string Telefone { get; set; }
-        public string Endereco { get; set; } = string.Empty;
+        public required Endereco Endereco { get; set; }
     }
 }
