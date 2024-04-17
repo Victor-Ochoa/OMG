@@ -4,8 +4,8 @@ namespace OMG.Domain.Entities.Base;
 
 public class Produto : Entity
 {
-    public string Nome { get; set; }
-    public float Valor { get; set; }
-    public Colecao Colecao { get; set; }
+    public required string Nome { get; set; }
+    public required float Valor { get; set; }
+    public required Colecao Colecao { get; set; }
 }
 
