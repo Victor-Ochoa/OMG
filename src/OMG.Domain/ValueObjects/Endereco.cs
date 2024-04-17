@@ -1,4 +1,4 @@
-﻿using OMG.Domain.Base;
+﻿using OMG.Domain.Base.ValueObjects;
 
 namespace OMG.Domain.ValueObjects;
 

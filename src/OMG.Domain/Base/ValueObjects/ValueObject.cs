@@ -2,7 +2,7 @@
 using System.Runtime.ConstrainedExecution;
 using System.Security.Cryptography;
 
-namespace OMG.Domain.Base;
+namespace OMG.Domain.Base.ValueObjects;
 public abstract class ValueObject : IEquatable<ValueObject>
 {
     protected static bool EqualOperator(ValueObject left, ValueObject right)
@@ -16,7 +16,7 @@ public abstract class ValueObject : IEquatable<ValueObject>
 
     protected static bool NotEqualOperator(ValueObject left, ValueObject right)
     {
-        return !(EqualOperator(left, right));
+        return !EqualOperator(left, right);
     }
 
     protected abstract IEnumerable<object> GetEqualityComponents();
@@ -30,7 +30,7 @@ public abstract class ValueObject : IEquatable<ValueObject>
 
         var other = (ValueObject)obj;
 
-        return this.GetEqualityComponents().SequenceEqual(other.GetEqualityComponents());
+        return GetEqualityComponents().SequenceEqual(other.GetEqualityComponents());
     }
 
     public override int GetHashCode()

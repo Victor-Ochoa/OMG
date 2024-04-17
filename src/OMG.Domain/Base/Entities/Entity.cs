@@ -1,4 +1,4 @@
-﻿namespace OMG.Domain.Base;
+﻿namespace OMG.Domain.Base.Entities;
 
 public abstract class Entity
 {

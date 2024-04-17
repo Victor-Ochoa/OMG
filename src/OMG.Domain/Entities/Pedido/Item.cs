@@ -1,4 +1,4 @@
-﻿using OMG.Domain.Base;
+﻿using OMG.Domain.Base.Entities;
 using OMG.Domain.Entities.Base;
 
 namespace OMG.Domain.Entities.Pedido;
